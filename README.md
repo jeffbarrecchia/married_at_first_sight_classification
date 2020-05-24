@@ -1,1 +1,5 @@
-# married_at_first_sight_classification
+# Married at First Sight: Predicting Marriage Through Classification
+
+This dataset was pulled from Kaggle.
+
+Married at First Sight is an A&E social experiment show, where people who sign up for the show are matched by sociologists and data analyts based on their compatibility. The first time they meet is on the altar the day of their wedding. They get married, go on a honeymoon, and then are together for the next eight weeks when they then have to decide whether or not they want to stay married or get divorced. What I attempted to do was use Classification to predict whether or not the couples would still be married today. I used the get_dummies extension from the pandas library to change all of the categorical variables into 0's and 1's so the classification would work, and since there was no test dataset given I had to use the train_test_split package from the sklearn module to divide up the data. I used three different classification methods, all of which are also from the sklearn module: DecisionTreeClassifier, RandomForestClassifier, and KNeighborsClassifier. While their training dataset accuracy varies between the three methods, their test dataset accuracy was relatively the same as they all tended to fall at 78.571% accuracy fairly frequently.
